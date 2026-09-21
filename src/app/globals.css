@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d1117;
+  --foreground: #c9d1d9;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* CSS for mobile responsive nav & layout */
+.statement {
+  padding: 100px 25px;
+}
+
+@media (max-width: 600px) {
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-actions > button:not(.cart-button) {
+    display: none;
+  }
+}
